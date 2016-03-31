@@ -1,0 +1,24 @@
+
+Axiom : X
+Axiom 1 :F
+Rule : F-[F[F[+[F]F]X]+X]
+Rule1 : F[F]
+Height: 2
+Depth: 3
+Plant rotation XYZ: 65, 60, 50
+Leaves On/Off1
+Smoothness8
+
+Sun On/Off: 1
+Sun Intensity: 1
+Sun position: -4, 25, -15
+
+Wind On/Off: 1X
+Wind intensity: 6
+Wind Direction: 60, 8, 60
+
+Confetti On/Off:0
+Rain On/Off: 0
+Rain position XYZ: 0, 20, 0
+
+Camera slide: 0

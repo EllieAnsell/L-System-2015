@@ -1,0 +1,218 @@
+\hypertarget{classdrawPlant}{
+\section{drawPlant Class Reference}
+\label{classdrawPlant}\index{drawPlant@{drawPlant}}
+}
+
+
+{\ttfamily \#include $<$drawPlant.h$>$}\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classdrawPlant_1_1cpp}{cpp}
+\begin{DoxyCompactList}\small\item\em The class to draw the plant and sun. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdrawPlant_a463d6595d05cfbf83f0f0f4550cde659}{drawPlant} ()
+\begin{DoxyCompactList}\small\item\em the constructor for the Drawplant class \item\end{DoxyCompactList}\item 
+void \hyperlink{classdrawPlant_ad3334e617ca49c38e033f08ecd7d4421}{initializeObjects} ()
+\begin{DoxyCompactList}\small\item\em the function to initialise plant pot and soil \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classdrawPlant_a02b5db3e0bf7b2ace07f8a3a36c893b6}{circleData} (const ngl::Vec3 \_\-startPoint, const float \_\-radius, const float \_\-angle, const ngl::Vec3 \_\-circleRotate)
+\begin{DoxyCompactList}\small\item\em the function to return the point data to buildPlant function \item\end{DoxyCompactList}\item 
+void \hyperlink{classdrawPlant_a937ee4c2cd0961f36a21b9896dc01abf}{drawScene} (ngl::Vec3 \_\-sunPos, const int \_\-sunPlantDist, const float \_\-intensitySun, bool \_\-toggleSun)
+\begin{DoxyCompactList}\small\item\em uses the camera from \hyperlink{classGLWindow}{GLWindow} and loads matrices to shader to project onto the screen \item\end{DoxyCompactList}\item 
+void \hyperlink{classdrawPlant_a037a68037dc91313242a1a9a33622d76}{buildPlant} (float \_\-radius, const float \_\-height, std::deque$<$ ngl::Vec3 $>$ \_\-vectorList, std::deque$<$ int $>$\_\-branchEnd, std::deque$<$ ngl::Vec3 $>$ \_\-leafList, std::deque$<$ ngl::Vec3 $>$ \_\-angleList, const int \_\-folliage, const int \_\-wind)
+\begin{DoxyCompactList}\small\item\em building the GLPoints into cylindrical shapes \item\end{DoxyCompactList}\item 
+void \hyperlink{classdrawPlant_a77c31c41c652dde8c520440aa60236c5}{drawFoliage} (const int \_\-option)
+\begin{DoxyCompactList}\small\item\em VAO objects to draw the leaf. \item\end{DoxyCompactList}\item 
+void \hyperlink{classdrawPlant_a0be5be0576dc4f79fad43d200f30c06e}{setCam} (ngl::Camera $\ast$\_\-cam)
+\begin{DoxyCompactList}\small\item\em function to set the camera from \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\item 
+ngl::Camera $\ast$ \hyperlink{classdrawPlant_aa01cdf1dd30ce5485445976aecb30797}{getCam} () const 
+\begin{DoxyCompactList}\small\item\em returns m\_\-cam from \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\item 
+void \hyperlink{classdrawPlant_a94a690f884d9c8694d339fc593b6ec05}{setShaderName} (const std::string \&\_\-n)
+\begin{DoxyCompactList}\small\item\em function to set the shader from \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\item 
+const std::string \hyperlink{classdrawPlant_a510090864706457b3914fae0694608e7}{getShaderName} () const 
+\begin{DoxyCompactList}\small\item\em gets the shadername from \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\item 
+void \hyperlink{classdrawPlant_a09fd9b02587d3bd6c9a3e5d358618cac}{setTransform} (ngl::Transformation \_\-transform)
+\begin{DoxyCompactList}\small\item\em gets the transform matrix from \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\item 
+void \hyperlink{classdrawPlant_a823c40b052df2f569e1792990b99be53}{setMouseTransform} (ngl::Mat4 \_\-mouseGlobalTX)
+\begin{DoxyCompactList}\small\item\em set to the mousetransform matrices from \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ngl::Transformation \hyperlink{classdrawPlant_af4fb974b7d22e9e689ca056fb463cbd2}{m\_\-transform}
+\begin{DoxyCompactList}\small\item\em transform for objects \item\end{DoxyCompactList}\item 
+std::vector$<$ ngl::Vec3 $>$ \hyperlink{classdrawPlant_af985e9e9a97e3bb279767dfb9df62b2e}{m\_\-vectorList}
+\begin{DoxyCompactList}\small\item\em vector list used to query parts of the plant positions \item\end{DoxyCompactList}\item 
+ngl::Mat4 \hyperlink{classdrawPlant_aa2f75ddd1c6678f303a98d55d29b98da}{m\_\-mouseGlobalTX}
+\begin{DoxyCompactList}\small\item\em mouse global position \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classdrawPlant_ae7c41f7bf312aed18ccee672ed927a2a}{m\_\-shaderName}
+\begin{DoxyCompactList}\small\item\em the shader name \item\end{DoxyCompactList}\item 
+ngl::Camera $\ast$ \hyperlink{classdrawPlant_a7df5109e180023ac117c8a84d7976c8f}{m\_\-cam}
+\begin{DoxyCompactList}\small\item\em create the camera \item\end{DoxyCompactList}\item 
+ngl::VertexArrayObject $\ast$ \hyperlink{classdrawPlant_a11498c9df9fbd17b2a1cb55942aff57b}{m\_\-vao}
+\begin{DoxyCompactList}\small\item\em the pointer vertex array object \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdrawPlant_a463d6595d05cfbf83f0f0f4550cde659}{
+\index{drawPlant@{drawPlant}!drawPlant@{drawPlant}}
+\index{drawPlant@{drawPlant}!drawPlant@{drawPlant}}
+\subsubsection[{drawPlant}]{\setlength{\rightskip}{0pt plus 5cm}drawPlant::drawPlant ()}}
+\label{classdrawPlant_a463d6595d05cfbf83f0f0f4550cde659}
+
+
+the constructor for the Drawplant class 
+
+\subsection{Member Function Documentation}
+\hypertarget{classdrawPlant_a037a68037dc91313242a1a9a33622d76}{
+\index{drawPlant@{drawPlant}!buildPlant@{buildPlant}}
+\index{buildPlant@{buildPlant}!drawPlant@{drawPlant}}
+\subsubsection[{buildPlant}]{\setlength{\rightskip}{0pt plus 5cm}void drawPlant::buildPlant (float {\em \_\-radius}, \/  const float {\em \_\-height}, \/  std::deque$<$ ngl::Vec3 $>$ {\em \_\-vectorList}, \/  std::deque$<$ int $>$ {\em \_\-branchEnd}, \/  std::deque$<$ ngl::Vec3 $>$ {\em \_\-leafList}, \/  std::deque$<$ ngl::Vec3 $>$ {\em \_\-angleList}, \/  const int {\em \_\-folliage}, \/  const int {\em \_\-wind})}}
+\label{classdrawPlant_a037a68037dc91313242a1a9a33622d76}
+
+
+building the GLPoints into cylindrical shapes 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-radius}]the radius of the plant \item[\mbox{$\leftarrow$} {\em \_\-height}]the height of each branch \item[\mbox{$\leftarrow$} {\em \_\-vectorList}]a list of vectors making the tree \item[\mbox{$\leftarrow$} {\em \_\-branchEnd}]a list specifying where the branches end in order to stop drawing points \item[\mbox{$\leftarrow$} {\em \_\-leafList}]a list containing vectors for where the leaves are \item[\mbox{$\leftarrow$} {\em \_\-angleList}]a list containing the angles in order to do circle rotation at the tips of the branches \item[\mbox{$\leftarrow$} {\em \_\-folliage}]queries whether there's folliage. If value is 1, draw leaves. \item[\mbox{$\leftarrow$} {\em \_\-wind}]queries intensity of the wind. \end{DoxyParams}
+\hypertarget{classdrawPlant_a02b5db3e0bf7b2ace07f8a3a36c893b6}{
+\index{drawPlant@{drawPlant}!circleData@{circleData}}
+\index{circleData@{circleData}!drawPlant@{drawPlant}}
+\subsubsection[{circleData}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 drawPlant::circleData (const ngl::Vec3 {\em \_\-startPoint}, \/  const float {\em \_\-radius}, \/  const float {\em \_\-angle}, \/  const ngl::Vec3 {\em \_\-circleRotate})}}
+\label{classdrawPlant_a02b5db3e0bf7b2ace07f8a3a36c893b6}
+
+
+the function to return the point data to buildPlant function 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-startPoint}]the vector which the end of the branch circle rotates around \item[\mbox{$\leftarrow$} {\em \_\-radius}]the radius of the circle \item[\mbox{$\leftarrow$} {\em \_\-angle}]the angle the circle rotates by \item[\mbox{$\leftarrow$} {\em \_\-circleRotate}]the vector of angles the circle rotates by \end{DoxyParams}
+\hypertarget{classdrawPlant_a77c31c41c652dde8c520440aa60236c5}{
+\index{drawPlant@{drawPlant}!drawFoliage@{drawFoliage}}
+\index{drawFoliage@{drawFoliage}!drawPlant@{drawPlant}}
+\subsubsection[{drawFoliage}]{\setlength{\rightskip}{0pt plus 5cm}void drawPlant::drawFoliage (const int {\em \_\-option})}}
+\label{classdrawPlant_a77c31c41c652dde8c520440aa60236c5}
+
+
+VAO objects to draw the leaf. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-option}]if 1, a sphere is drawn \end{DoxyParams}
+\hypertarget{classdrawPlant_a937ee4c2cd0961f36a21b9896dc01abf}{
+\index{drawPlant@{drawPlant}!drawScene@{drawScene}}
+\index{drawScene@{drawScene}!drawPlant@{drawPlant}}
+\subsubsection[{drawScene}]{\setlength{\rightskip}{0pt plus 5cm}void drawPlant::drawScene (ngl::Vec3 {\em \_\-sunPos}, \/  const int {\em \_\-sunPlantDist}, \/  const float {\em \_\-intensitySun}, \/  bool {\em \_\-toggleSun})}}
+\label{classdrawPlant_a937ee4c2cd0961f36a21b9896dc01abf}
+
+
+uses the camera from \hyperlink{classGLWindow}{GLWindow} and loads matrices to shader to project onto the screen 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-sunPos}]the vector containing the sun's position \item[\mbox{$\leftarrow$} {\em \_\-sunPlantDist}]the distance between the sun and plant which determines the plant's branch colour \item[\mbox{$\leftarrow$} {\em \_\-intensitySun}]the brightness of the sun, which determines the sun's colour \item[\mbox{$\leftarrow$} {\em \_\-toggleSun}]query of whether the sun is on or off \end{DoxyParams}
+\hypertarget{classdrawPlant_aa01cdf1dd30ce5485445976aecb30797}{
+\index{drawPlant@{drawPlant}!getCam@{getCam}}
+\index{getCam@{getCam}!drawPlant@{drawPlant}}
+\subsubsection[{getCam}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Camera$\ast$ drawPlant::getCam () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classdrawPlant_aa01cdf1dd30ce5485445976aecb30797}
+
+
+returns m\_\-cam from \hyperlink{classGLWindow}{GLWindow} \hypertarget{classdrawPlant_a510090864706457b3914fae0694608e7}{
+\index{drawPlant@{drawPlant}!getShaderName@{getShaderName}}
+\index{getShaderName@{getShaderName}!drawPlant@{drawPlant}}
+\subsubsection[{getShaderName}]{\setlength{\rightskip}{0pt plus 5cm}const std::string drawPlant::getShaderName () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classdrawPlant_a510090864706457b3914fae0694608e7}
+
+
+gets the shadername from \hyperlink{classGLWindow}{GLWindow} \hypertarget{classdrawPlant_ad3334e617ca49c38e033f08ecd7d4421}{
+\index{drawPlant@{drawPlant}!initializeObjects@{initializeObjects}}
+\index{initializeObjects@{initializeObjects}!drawPlant@{drawPlant}}
+\subsubsection[{initializeObjects}]{\setlength{\rightskip}{0pt plus 5cm}void drawPlant::initializeObjects ()}}
+\label{classdrawPlant_ad3334e617ca49c38e033f08ecd7d4421}
+
+
+the function to initialise plant pot and soil \hypertarget{classdrawPlant_a0be5be0576dc4f79fad43d200f30c06e}{
+\index{drawPlant@{drawPlant}!setCam@{setCam}}
+\index{setCam@{setCam}!drawPlant@{drawPlant}}
+\subsubsection[{setCam}]{\setlength{\rightskip}{0pt plus 5cm}void drawPlant::setCam (ngl::Camera $\ast$ {\em \_\-cam})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classdrawPlant_a0be5be0576dc4f79fad43d200f30c06e}
+
+
+function to set the camera from \hyperlink{classGLWindow}{GLWindow} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em $\ast$\_\-cam}]the camera loaded to the scene \end{DoxyParams}
+\hypertarget{classdrawPlant_a823c40b052df2f569e1792990b99be53}{
+\index{drawPlant@{drawPlant}!setMouseTransform@{setMouseTransform}}
+\index{setMouseTransform@{setMouseTransform}!drawPlant@{drawPlant}}
+\subsubsection[{setMouseTransform}]{\setlength{\rightskip}{0pt plus 5cm}void drawPlant::setMouseTransform (ngl::Mat4 {\em \_\-mouseGlobalTX})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classdrawPlant_a823c40b052df2f569e1792990b99be53}
+
+
+set to the mousetransform matrices from \hyperlink{classGLWindow}{GLWindow} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-mouseGlobalTX}]sets the mouse transform matrices from \hyperlink{classGLWindow}{GLWindow} \end{DoxyParams}
+\hypertarget{classdrawPlant_a94a690f884d9c8694d339fc593b6ec05}{
+\index{drawPlant@{drawPlant}!setShaderName@{setShaderName}}
+\index{setShaderName@{setShaderName}!drawPlant@{drawPlant}}
+\subsubsection[{setShaderName}]{\setlength{\rightskip}{0pt plus 5cm}void drawPlant::setShaderName (const std::string \& {\em \_\-n})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classdrawPlant_a94a690f884d9c8694d339fc593b6ec05}
+
+
+function to set the shader from \hyperlink{classGLWindow}{GLWindow} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \&\_\-n}]assignes the shader name to m\_\-shaderName \end{DoxyParams}
+\hypertarget{classdrawPlant_a09fd9b02587d3bd6c9a3e5d358618cac}{
+\index{drawPlant@{drawPlant}!setTransform@{setTransform}}
+\index{setTransform@{setTransform}!drawPlant@{drawPlant}}
+\subsubsection[{setTransform}]{\setlength{\rightskip}{0pt plus 5cm}void drawPlant::setTransform (ngl::Transformation {\em \_\-transform})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classdrawPlant_a09fd9b02587d3bd6c9a3e5d358618cac}
+
+
+gets the transform matrix from \hyperlink{classGLWindow}{GLWindow} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-transform}]sets the transformation from \hyperlink{classGLWindow}{GLWindow} \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classdrawPlant_a7df5109e180023ac117c8a84d7976c8f}{
+\index{drawPlant@{drawPlant}!m\_\-cam@{m\_\-cam}}
+\index{m\_\-cam@{m\_\-cam}!drawPlant@{drawPlant}}
+\subsubsection[{m\_\-cam}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Camera$\ast$ {\bf drawPlant::m\_\-cam}}}
+\label{classdrawPlant_a7df5109e180023ac117c8a84d7976c8f}
+
+
+create the camera \hypertarget{classdrawPlant_aa2f75ddd1c6678f303a98d55d29b98da}{
+\index{drawPlant@{drawPlant}!m\_\-mouseGlobalTX@{m\_\-mouseGlobalTX}}
+\index{m\_\-mouseGlobalTX@{m\_\-mouseGlobalTX}!drawPlant@{drawPlant}}
+\subsubsection[{m\_\-mouseGlobalTX}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Mat4 {\bf drawPlant::m\_\-mouseGlobalTX}}}
+\label{classdrawPlant_aa2f75ddd1c6678f303a98d55d29b98da}
+
+
+mouse global position \hypertarget{classdrawPlant_ae7c41f7bf312aed18ccee672ed927a2a}{
+\index{drawPlant@{drawPlant}!m\_\-shaderName@{m\_\-shaderName}}
+\index{m\_\-shaderName@{m\_\-shaderName}!drawPlant@{drawPlant}}
+\subsubsection[{m\_\-shaderName}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf drawPlant::m\_\-shaderName}}}
+\label{classdrawPlant_ae7c41f7bf312aed18ccee672ed927a2a}
+
+
+the shader name \hypertarget{classdrawPlant_af4fb974b7d22e9e689ca056fb463cbd2}{
+\index{drawPlant@{drawPlant}!m\_\-transform@{m\_\-transform}}
+\index{m\_\-transform@{m\_\-transform}!drawPlant@{drawPlant}}
+\subsubsection[{m\_\-transform}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Transformation {\bf drawPlant::m\_\-transform}}}
+\label{classdrawPlant_af4fb974b7d22e9e689ca056fb463cbd2}
+
+
+transform for objects \hypertarget{classdrawPlant_a11498c9df9fbd17b2a1cb55942aff57b}{
+\index{drawPlant@{drawPlant}!m\_\-vao@{m\_\-vao}}
+\index{m\_\-vao@{m\_\-vao}!drawPlant@{drawPlant}}
+\subsubsection[{m\_\-vao}]{\setlength{\rightskip}{0pt plus 5cm}ngl::VertexArrayObject$\ast$ {\bf drawPlant::m\_\-vao}}}
+\label{classdrawPlant_a11498c9df9fbd17b2a1cb55942aff57b}
+
+
+the pointer vertex array object \hypertarget{classdrawPlant_af985e9e9a97e3bb279767dfb9df62b2e}{
+\index{drawPlant@{drawPlant}!m\_\-vectorList@{m\_\-vectorList}}
+\index{m\_\-vectorList@{m\_\-vectorList}!drawPlant@{drawPlant}}
+\subsubsection[{m\_\-vectorList}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ngl::Vec3$>$ {\bf drawPlant::m\_\-vectorList}}}
+\label{classdrawPlant_af985e9e9a97e3bb279767dfb9df62b2e}
+
+
+vector list used to query parts of the plant positions 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{drawPlant_8h}{drawPlant.h}\item 
+src/\hyperlink{drawPlant_8cpp}{drawPlant.cpp}\end{DoxyCompactItemize}

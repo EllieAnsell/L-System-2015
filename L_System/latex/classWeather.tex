@@ -1,0 +1,163 @@
+\hypertarget{classWeather}{
+\section{Weather Class Reference}
+\label{classWeather}\index{Weather@{Weather}}
+}
+
+
+{\ttfamily \#include $<$Weather.h$>$}\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classWeather_1_1cpp}{cpp}
+\begin{DoxyCompactList}\small\item\em this class builds builds and updates the particles' positions \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWeather_a148a749b4d95904c972e533d4aba3369}{Weather} (ngl::Vec3 \_\-pos, int \_\-numParticles)
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
+int \hyperlink{classWeather_ac6f35667da53d25e368ca7c55b1635f0}{update} (bool \_\-rainOnOff, bool \_\-confetti)
+\begin{DoxyCompactList}\small\item\em Adapted from Jon Macey's simpleParticle demo. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWeather_a9a87fb547a7312e1c645b5c0e4ff580d}{draw} (bool \_\-rainOnOff, bool \_\-confetti)
+\begin{DoxyCompactList}\small\item\em a method to draw all the particles contained in the system \item\end{DoxyCompactList}\item 
+void \hyperlink{classWeather_a9c19c5387f67875053c4dc274fb7cd49}{setCam} (ngl::Camera $\ast$\_\-cam)
+\begin{DoxyCompactList}\small\item\em sets the camera from \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\item 
+ngl::Camera $\ast$ \hyperlink{classWeather_a594b7ade4a05f1cfdc70480d562fbc71}{getCam} () const 
+\begin{DoxyCompactList}\small\item\em imports the camera for \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\item 
+void \hyperlink{classWeather_aa4e71bd1c04b189f74cd426ae777cfcf}{setShaderName} (const std::string \&\_\-n)
+\begin{DoxyCompactList}\small\item\em sets the shader from \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\item 
+const std::string \hyperlink{classWeather_a56d1feb426ec64dbd0d739cf18ed697e}{getShaderName} () const 
+\begin{DoxyCompactList}\small\item\em gets the shader name from \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\item 
+void \hyperlink{classWeather_ad3fcb872dcd988251b3feb29bf4b1303}{setTransform} (ngl::Transformation \_\-transform)
+\begin{DoxyCompactList}\small\item\em gets the transform matrices from \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\item 
+void \hyperlink{classWeather_a9440d21e6228408df6b899230355d8b6}{setMouseTransform} (ngl::Mat4 \_\-mouseGlobalTX)
+\begin{DoxyCompactList}\small\item\em sets the mouse transform matrix from \hyperlink{classGLWindow}{GLWindow} \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ngl::Transformation \hyperlink{classWeather_a7b932337076098438c197a9a1903a057}{m\_\-transform}
+\begin{DoxyCompactList}\small\item\em transform matrix \item\end{DoxyCompactList}\item 
+ngl::Mat4 \hyperlink{classWeather_a4785be21c9bf7a7a67645fc08729d66e}{m\_\-mouseGlobalTX}
+\begin{DoxyCompactList}\small\item\em the mouse transformation matrices \item\end{DoxyCompactList}\item 
+int \hyperlink{classWeather_a5865ebcfd559433fe19caa4f53e0d61f}{m\_\-hitCount}
+\begin{DoxyCompactList}\small\item\em the number of times rain hits the plant pot \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWeather_a148a749b4d95904c972e533d4aba3369}{
+\index{Weather@{Weather}!Weather@{Weather}}
+\index{Weather@{Weather}!Weather@{Weather}}
+\subsubsection[{Weather}]{\setlength{\rightskip}{0pt plus 5cm}Weather::Weather (ngl::Vec3 {\em \_\-pos}, \/  int {\em \_\-numParticles})}}
+\label{classWeather_a148a749b4d95904c972e533d4aba3369}
+
+
+constructor Adapted from Jon Macey's simpleParticle demo.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-pos}]the position of the emitter \item[\mbox{$\leftarrow$} {\em \_\-numParticles}]the number of particles to create \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWeather_a9a87fb547a7312e1c645b5c0e4ff580d}{
+\index{Weather@{Weather}!draw@{draw}}
+\index{draw@{draw}!Weather@{Weather}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Weather::draw (bool {\em \_\-rainOnOff}, \/  bool {\em \_\-confetti})}}
+\label{classWeather_a9a87fb547a7312e1c645b5c0e4ff580d}
+
+
+a method to draw all the particles contained in the system 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em query}]to toggle if rain is on or off \item[\mbox{$\leftarrow$} {\em query}]to toggle if confetti is on or off \end{DoxyParams}
+\hypertarget{classWeather_a594b7ade4a05f1cfdc70480d562fbc71}{
+\index{Weather@{Weather}!getCam@{getCam}}
+\index{getCam@{getCam}!Weather@{Weather}}
+\subsubsection[{getCam}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Camera$\ast$ Weather::getCam () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWeather_a594b7ade4a05f1cfdc70480d562fbc71}
+
+
+imports the camera for \hyperlink{classGLWindow}{GLWindow} \hypertarget{classWeather_a56d1feb426ec64dbd0d739cf18ed697e}{
+\index{Weather@{Weather}!getShaderName@{getShaderName}}
+\index{getShaderName@{getShaderName}!Weather@{Weather}}
+\subsubsection[{getShaderName}]{\setlength{\rightskip}{0pt plus 5cm}const std::string Weather::getShaderName () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWeather_a56d1feb426ec64dbd0d739cf18ed697e}
+
+
+gets the shader name from \hyperlink{classGLWindow}{GLWindow} \hypertarget{classWeather_a9c19c5387f67875053c4dc274fb7cd49}{
+\index{Weather@{Weather}!setCam@{setCam}}
+\index{setCam@{setCam}!Weather@{Weather}}
+\subsubsection[{setCam}]{\setlength{\rightskip}{0pt plus 5cm}void Weather::setCam (ngl::Camera $\ast$ {\em \_\-cam})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWeather_a9c19c5387f67875053c4dc274fb7cd49}
+
+
+sets the camera from \hyperlink{classGLWindow}{GLWindow} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-cam}]the ngl camera \end{DoxyParams}
+\hypertarget{classWeather_a9440d21e6228408df6b899230355d8b6}{
+\index{Weather@{Weather}!setMouseTransform@{setMouseTransform}}
+\index{setMouseTransform@{setMouseTransform}!Weather@{Weather}}
+\subsubsection[{setMouseTransform}]{\setlength{\rightskip}{0pt plus 5cm}void Weather::setMouseTransform (ngl::Mat4 {\em \_\-mouseGlobalTX})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWeather_a9440d21e6228408df6b899230355d8b6}
+
+
+sets the mouse transform matrix from \hyperlink{classGLWindow}{GLWindow} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-mouseGlobalTX}]the mouse global matrices \end{DoxyParams}
+\hypertarget{classWeather_aa4e71bd1c04b189f74cd426ae777cfcf}{
+\index{Weather@{Weather}!setShaderName@{setShaderName}}
+\index{setShaderName@{setShaderName}!Weather@{Weather}}
+\subsubsection[{setShaderName}]{\setlength{\rightskip}{0pt plus 5cm}void Weather::setShaderName (const std::string \& {\em \_\-n})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWeather_aa4e71bd1c04b189f74cd426ae777cfcf}
+
+
+sets the shader from \hyperlink{classGLWindow}{GLWindow} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-n}]assigns name of shader to shadername \end{DoxyParams}
+\hypertarget{classWeather_ad3fcb872dcd988251b3feb29bf4b1303}{
+\index{Weather@{Weather}!setTransform@{setTransform}}
+\index{setTransform@{setTransform}!Weather@{Weather}}
+\subsubsection[{setTransform}]{\setlength{\rightskip}{0pt plus 5cm}void Weather::setTransform (ngl::Transformation {\em \_\-transform})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWeather_ad3fcb872dcd988251b3feb29bf4b1303}
+
+
+gets the transform matrices from \hyperlink{classGLWindow}{GLWindow} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-transform}]sets the transform to this \end{DoxyParams}
+\hypertarget{classWeather_ac6f35667da53d25e368ca7c55b1635f0}{
+\index{Weather@{Weather}!update@{update}}
+\index{update@{update}!Weather@{Weather}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}int Weather::update (bool {\em \_\-rainOnOff}, \/  bool {\em \_\-confetti})}}
+\label{classWeather_ac6f35667da53d25e368ca7c55b1635f0}
+
+
+Adapted from Jon Macey's simpleParticle demo. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em query}]to toggle whether rain is on or off \item[\mbox{$\leftarrow$} {\em query}]to toggle whether the confetti is on or off \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWeather_a5865ebcfd559433fe19caa4f53e0d61f}{
+\index{Weather@{Weather}!m\_\-hitCount@{m\_\-hitCount}}
+\index{m\_\-hitCount@{m\_\-hitCount}!Weather@{Weather}}
+\subsubsection[{m\_\-hitCount}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Weather::m\_\-hitCount}}}
+\label{classWeather_a5865ebcfd559433fe19caa4f53e0d61f}
+
+
+the number of times rain hits the plant pot \hypertarget{classWeather_a4785be21c9bf7a7a67645fc08729d66e}{
+\index{Weather@{Weather}!m\_\-mouseGlobalTX@{m\_\-mouseGlobalTX}}
+\index{m\_\-mouseGlobalTX@{m\_\-mouseGlobalTX}!Weather@{Weather}}
+\subsubsection[{m\_\-mouseGlobalTX}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Mat4 {\bf Weather::m\_\-mouseGlobalTX}}}
+\label{classWeather_a4785be21c9bf7a7a67645fc08729d66e}
+
+
+the mouse transformation matrices \hypertarget{classWeather_a7b932337076098438c197a9a1903a057}{
+\index{Weather@{Weather}!m\_\-transform@{m\_\-transform}}
+\index{m\_\-transform@{m\_\-transform}!Weather@{Weather}}
+\subsubsection[{m\_\-transform}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Transformation {\bf Weather::m\_\-transform}}}
+\label{classWeather_a7b932337076098438c197a9a1903a057}
+
+
+transform matrix 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Weather_8h}{Weather.h}\item 
+src/\hyperlink{Weather_8cpp}{Weather.cpp}\end{DoxyCompactItemize}

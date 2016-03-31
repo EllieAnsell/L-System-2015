@@ -1,0 +1,64 @@
+\hypertarget{classParticle}{
+\section{Particle Class Reference}
+\label{classParticle}\index{Particle@{Particle}}
+}
+
+
+{\ttfamily \#include $<$Particle.h$>$}\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classParticle_1_1cpp}{cpp}
+\begin{DoxyCompactList}\small\item\em particle class to update particles positions for rain \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParticle_a46486946487f51b9f8b2095c61f6dfaa}{Particle} (ngl::Vec3 \_\-pos, \hyperlink{classWeather}{Weather} $\ast$\_\-emitter)
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
+int \hyperlink{classParticle_a6633cb40b4601a8155f02513c36f41ce}{update} (bool \_\-rainOnOff, bool \_\-confetti)
+\begin{DoxyCompactList}\small\item\em method to calculate the particles' new positions \item\end{DoxyCompactList}\item 
+void \hyperlink{classParticle_ac38af466dd01764587bc00ee7b6a2e90}{draw} (bool \_\-confetti) const 
+\begin{DoxyCompactList}\small\item\em a method to draw the particle \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classParticle_a46486946487f51b9f8b2095c61f6dfaa}{
+\index{Particle@{Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!Particle@{Particle}}
+\subsubsection[{Particle}]{\setlength{\rightskip}{0pt plus 5cm}Particle::Particle (ngl::Vec3 {\em \_\-pos}, \/  {\bf Weather} $\ast$ {\em \_\-emitter})}}
+\label{classParticle_a46486946487f51b9f8b2095c61f6dfaa}
+
+
+constructor 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-pos}]the initial starting vector of the rain particles \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classParticle_ac38af466dd01764587bc00ee7b6a2e90}{
+\index{Particle@{Particle}!draw@{draw}}
+\index{draw@{draw}!Particle@{Particle}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Particle::draw (bool {\em \_\-confetti}) const}}
+\label{classParticle_ac38af466dd01764587bc00ee7b6a2e90}
+
+
+a method to draw the particle Adapted from Jon Macey's code.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-confetti}]query for confetti \end{DoxyParams}
+\hypertarget{classParticle_a6633cb40b4601a8155f02513c36f41ce}{
+\index{Particle@{Particle}!update@{update}}
+\index{update@{update}!Particle@{Particle}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}int Particle::update (bool {\em \_\-rainOnOff}, \/  bool {\em \_\-confetti})}}
+\label{classParticle_a6633cb40b4601a8155f02513c36f41ce}
+
+
+method to calculate the particles' new positions 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-rainOnOff}]inputs whether the rain is on or off \item[\mbox{$\leftarrow$} {\em \_\-confetti}]inputs whether the confetti is on or off \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Particle_8h}{Particle.h}\item 
+src/\hyperlink{Particle_8cpp}{Particle.cpp}\end{DoxyCompactItemize}
