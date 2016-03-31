@@ -1,27 +1,15 @@
-#Computing For Animation 1 Assignment
+#Computing For Animation 1 Assignment, Year 2. 
 
-this repo is for you to submit your computing for animation assignment. 
+This repository contains the files I used for my computing assignment during my second year of university. I chose to make an L-system, using the NGL graphics library created by Jon Macey, Bournemouth University programming lecturer, and openGL and C++. 
 
-Use this file for the project documentation and report. You can learn about markdown syntax [here]( https://help.github.com/articles/github-flavored-markdown/)
+'''
+Result:
+'''
+The program lets you build an L-system, which reacts to changes in wind speed and direction, and grows when it rains. It orients towards the sun which you can move around the scene, and includes basic functions such as camera panning and orienting with the mouse. 
 
-##Getting Started
+Please see the video in FinalSubmission/04_Video to see the video of the results. 
 
-To start your project clone this repo into your home directory
-
-``` 
-git clone git@github.com:NCCA/[your username]-CA1.git
-
-cd [your usrname]-CA1
-
-```
-
-You can then add your files and edit things. Once you are ready to upload (and do this often)
-
-```
-git add .
-git commit -am "added files"
-git push origin master
-```
-The commit message should make sence in the context of what you are doing such as modify certain files etc.
-
-
+'''
+Source code
+'''
+Source code can be found under 
